@@ -39,6 +39,7 @@ body {
   display: flex;
   background-image: url(Imagens/cimento-queimado.jpg);
   max-width: 80%;
+  max-height: 240px;
   border: 3px solid black;
   border-radius: 15px;
   overflow: hidden;
@@ -58,7 +59,8 @@ body {
 }
 
 article {
-  width: 500px;
+  width: 550px;
+
   margin: auto;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(20, 20, 20);
@@ -66,5 +68,44 @@ article {
 
 article p {
   font-weight: bold;
+  font-size: 20px;
   text-shadow: 1px 1px 5px rgb(247, 246, 246);
+}
+
+article h3 {
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 1px 1px 5px rgb(247, 246, 246);
+  text-align: center;
+}
+.botoes-container {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.botao-menu {
+  height: auto;
+  background-color: gray;
+  padding: 5px;
+  border-radius: 10px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  box-shadow: 2px 2px 4px white;
+  margin: 0px 10px;
+}
+
+.botao-menu a {
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 5px;
+  text-shadow: 2px 2px 4px black;
+}
+
+section {
+  margin: auto;
 }
