@@ -1,0 +1,70 @@
+body {
+  background-image: url("Imagens/cimento.jpg");
+}
+.container0 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 280px;
+  width: auto;
+  border: 5px solid black;
+  background-color: black;
+  justify-content: space-between;
+}
+
+#logo {
+  background-image: url(Imagens/cimento-queimado.jpg);
+  border-radius: 15px;
+  height: 280px;
+  width: 50%;
+}
+
+#site {
+  color: rgb(248, 248, 248);
+  text-align: center;
+  font-size: 100px;
+  font-family: audiowide, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-variant: small-caps;
+  text-shadow: 3px 3px 10px black;
+  margin: 10px 30px;
+}
+
+#img-logo {
+  width: 250px;
+  height: 282px;
+  margin: 0px 20px;
+}
+
+.flex {
+  display: flex;
+  background-image: url(Imagens/cimento-queimado.jpg);
+  max-width: 80%;
+  border: 3px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 2px 2px 7px black;
+}
+
+.__img {
+  width: 350px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 15px;
+  outline: 3px solid black;
+}
+.__img img {
+  height: 240px;
+  width: 350px;
+}
+
+article {
+  width: 500px;
+  margin: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(20, 20, 20);
+}
+
+article p {
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgb(247, 246, 246);
+}

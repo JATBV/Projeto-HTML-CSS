@@ -6,12 +6,24 @@
     <title>Portal Maromba</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide"
+    />
   </head>
 
   <body>
     <header>
-      <div class="topo">
-        <img src="Imagens/TOPO.png" alt="TOPO" />
+      <div class="container0">
+        <div>
+          <img id="img-logo" src="Imagens/Rino-2.png" alt="Logo" />
+        </div>
+        <div id="logo">
+          <h1 id="site">Portal<br />Maromba</h1>
+        </div>
+        <div>
+          <img id="img-logo" src="Imagens/Rino-1.png" alt="Logo" />
+        </div>
       </div>
       <br />
       <div class="botoes-container">
@@ -34,8 +46,15 @@
         </h3>
       </div>
     </main>
-    <section>
-      <img src="Imagens/intro-2.jpg" alt="Introdução" />
+    <section class="flex">
+      <div class="__img">
+        <img
+          src="Imagens/intro-2.jpg"
+          alt="Introdução"
+          width="350"
+          height="280"
+        />
+      </div>
 
       <article class="intro">
         <h3>Introdução</h3>
@@ -46,7 +65,7 @@
       </article>
     </section>
     <br />
-    <section>
+    <section class="flex">
       <article class="treino">
         <h3>Treino</h3>
         <p>
@@ -55,21 +74,25 @@
           de execução e finalidades.
         </p>
       </article>
-      <img src="Imagens/treino-3.png" alt="Treino" />
+      <div class="__img"><img src="Imagens/treino-3.png" alt="Treino" /></div>
     </section>
     <br />
-    <img src="Imagens/aliment.png" alt="Alimentação" />
-    <article class="aliment">
-      <h3>Alimentação</h3>
-      <p>
-        Que tal aquela ajudinha pra deixar sua alimentação mais saudável? Na
-        seção alimentação você encontará estilos de alimentação e dicas de
-        alimentos para dar um up na sua rotina. Ah, lá também tem algumas
-        receitas para te tirar da monotomia sem peso na consciência!
-      </p>
-    </article>
+    <section class="flex">
+      <div class="__img">
+        <img src="Imagens/aliment.png" alt="Alimentação" />
+      </div>
+      <article class="aliment">
+        <h3>Alimentação</h3>
+        <p>
+          Que tal aquela ajudinha pra deixar sua alimentação mais saudável? Na
+          seção alimentação você encontará estilos de alimentação e dicas de
+          alimentos para dar um up na sua rotina. Ah, lá também tem algumas
+          receitas para te tirar da monotomia sem peso na consciência!
+        </p>
+      </article>
+    </section>
     <br />
-    <section>
+    <section class="flex">
       <article class="suple">
         <h3>Suplementação</h3>
         <p>
@@ -78,7 +101,13 @@
           alcançar seus objetivos.
         </p>
       </article>
-      <img class="suple__img" src="Imagens/suplement.png" alt="Suplementação" />
+      <div class="__img">
+        <img
+          class="suple__img"
+          src="Imagens/suplement.png"
+          alt="Suplementação"
+        />
+      </div>
     </section>
   </body>
 </html>
