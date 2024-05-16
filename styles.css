@@ -143,7 +143,38 @@ section {
   border: 1px 2px 2px 1px solid greenyellow;
   box-shadow: 2px 2px 5px greenyellow;
 }
+
+.botao-menu a:hover {
+  color: greenyellow;
+}
+
 span:hover {
+  color: greenyellow;
+  text-shadow: 2px 2px 5px black;
+  filter: drop-shadow(0px 0px 3px black);
+}
+
+footer {
+  background-image: linear-gradient(to right, rgb(83, 83, 83), black);
+  margin: 5px auto 0px;
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 22px;
+  font-family: audiowide, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  font-variant: small-caps;
+  width: 100%;
+  filter: drop-shadow(0px 0px 10px white);
+  text-shadow: 1px 1px 5px black;
+  align-items: center;
+}
+
+.contato {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.contato:hover {
   color: greenyellow;
   text-shadow: 2px 2px 5px black;
   filter: drop-shadow(0px 0px 3px black);

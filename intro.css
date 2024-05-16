@@ -103,6 +103,8 @@ article h4 {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
   margin: auto;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -110,6 +112,7 @@ section {
   max-width: 70%;
   border-radius: 5%;
   border: 4px solid black;
+  align-items: center;
 }
 
 .apresentacao {
@@ -125,24 +128,210 @@ section {
   text-shadow: 1px 1px 5px black;
 }
 
-#cat img {
-  height: auto;
-  max-width: 70%;
-  align-items: center;
-}
-#fases img {
-  height: auto;
-  max-width: 70%;
-  align-items: center;
-}
-
 .botao-menu:hover {
   border: 1px 2px 2px 1px solid greenyellow;
   box-shadow: 2px 2px 5px greenyellow;
+}
+
+.botao-menu a:hover {
+  color: greenyellow;
 }
 
 span:hover {
   color: greenyellow;
   text-shadow: 2px 2px 5px black;
   filter: drop-shadow(0px 0px 3px black);
+}
+
+footer {
+  background-image: linear-gradient(to right, rgb(83, 83, 83), black);
+  margin: 5px auto 0px;
+  padding: 5px;
+  color: whitesmoke;
+  font-size: 22px;
+  font-family: audiowide, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  font-variant: small-caps;
+  width: 100%;
+  filter: drop-shadow(0px 0px 10px white);
+  text-shadow: 1px 1px 5px black;
+  align-items: center;
+}
+
+.contato {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.contato:hover {
+  color: greenyellow;
+  text-shadow: 2px 2px 5px black;
+  filter: drop-shadow(0px 0px 3px black);
+}
+
+.categ1 {
+  background-image: url(Imagens/body-squat.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 15px;
+  outline: 3px solid black;
+  position: center;
+}
+.categ2 {
+  background-image: url(Imagens/power-squat-2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 420px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 15px;
+  outline: 3px solid black;
+  position: center;
+}
+.categ3 {
+  background-image: url(Imagens/func-squat2.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 440px;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 15px;
+  outline: 3px solid black;
+  position: center;
+}
+
+.__img {
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  outline: 3px solid black;
+}
+.__img img {
+  height: auto;
+  width: 400px;
+}
+
+.diet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cat article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#bio article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ecto {
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 250px;
+  height: 500px;
+  background-image: url(Imagens/ectomorfo.gif);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+  grid-area: ecto;
+}
+
+.ecto:hover {
+  background-image: url(Imagens/frank-zane.jpg);
+}
+
+.meso {
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 250px;
+  height: 500px;
+  background-image: url(Imagens/Mesomorfo.gif);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+  grid-area: meso;
+}
+
+.meso:hover {
+  background-image: url(Imagens/arnold3.jpg);
+}
+.endo {
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 250px;
+  height: 500px;
+  background-image: url(Imagens/Endomorfo.gif);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease;
+  grid-area: endo;
+}
+
+.endo:hover {
+  background-image: url(Imagens/jay-cutler2.jpg);
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: content1;
+}
+
+.content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: content2;
+}
+.content3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: content3;
+}
+.content4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: content4;
+}
+
+#bio {
+  display: grid;
+  grid-template-areas:
+    "content1 content1 content1"
+    "content2 content2 ecto"
+    "content3 content3 meso"
+    "content4 content4 endo";
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: Auto;
+  gap: 25px;
+  width: 65%;
+  padding: 20px;
+}
+
+#bio h4 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 22px;
+  text-shadow: 2px 2px 5px white;
+  filter: drop-shadow(0px 0px 3px white);
+}
+
+#bio p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: 1px 1px 5px rgb(247, 246, 246);
+  filter: drop-shadow(0px 0px 3px white);
 }
